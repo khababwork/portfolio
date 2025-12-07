@@ -42,7 +42,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-2 gap-4">
         <div className="space-y-2">
           <label htmlFor="name" className="text-sm font-medium text-zinc-400">
-            Name
+            Your Name
           </label>
           <input
             type="text"
@@ -57,7 +57,7 @@ export default function ContactForm() {
           <label
             htmlFor="email"
             className="text-sm font-medium text-zinc-400">
-            Email
+            Your Email
           </label>
           <input
             type="email"

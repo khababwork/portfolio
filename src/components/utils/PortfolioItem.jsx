@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-function VideoShowcase({ videoSrc, title, aspectRatio }) {
+function PortfolioItem({ videoSrc, title, aspectRatio }) {
   const [showControls, setShowControls] = useState(false);
   const videoRef = useRef(null);
 
@@ -20,4 +20,4 @@ function VideoShowcase({ videoSrc, title, aspectRatio }) {
   );
 }
 
-export default VideoShowcase;
+export default PortfolioItem;

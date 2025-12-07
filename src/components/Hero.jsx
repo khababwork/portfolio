@@ -8,7 +8,7 @@ const Hero = () => {
 
       <div className="container relative z-10 mx-auto px-6 text-center">
         <div className="animate-fade-in-up">
-          <span className="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-primary mb-6">
+          <span className="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#9B70FF] mb-6">
             Available for Hire
           </span>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 text-balance">

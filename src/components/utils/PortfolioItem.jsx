@@ -6,7 +6,7 @@ function PortfolioItem({ videoSrc, title, aspectRatio, poster }) {
   return (
     <div
       className={`relative ${
-        aspectRatio ? "aspect-" + aspectRatio : "aspect-9/14"
+        aspectRatio ? "aspect-" + aspectRatio : "aspect-9/16"
       } group cursor-pointer overflow-hidden rounded-lg bg-zinc-900 border border-white/5`}
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => setShowControls(false)}>

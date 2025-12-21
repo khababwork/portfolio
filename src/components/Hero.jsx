@@ -12,15 +12,14 @@ const Hero = () => {
             Available for Hire
           </span>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 text-balance">
-            Crafting Viral <br />
+            Crafting Engaging <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">
-              Short-Form Content
+              Video Content
             </span>
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-zinc-400 mb-10 text-balance">
-            I turn raw footage into engaging stories. Specialized in YouTube
-            Shorts, Instagram Reels and TikToks that hook viewers from the first
-            second.
+            I turn raw footage into clear, engaging stories designed to capture
+            and hold attention.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a

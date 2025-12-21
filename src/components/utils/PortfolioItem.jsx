@@ -1,22 +1,15 @@
-import { useState, useRef } from "react";
-function PortfolioItem({ videoSrc, title, aspectRatio, poster }) {
-  const [showControls, setShowControls] = useState(false);
-  const videoRef = useRef(null);
+function PortfolioItem({ videoSrc, aspectRatio}) {
 
   return (
     <div
-      className={`relative ${
-        aspectRatio ? "aspect-" + aspectRatio : "aspect-9/16"
-      } group cursor-pointer overflow-hidden rounded-lg bg-zinc-900 border border-white/5`}
-      onMouseEnter={() => setShowControls(true)}
-      onMouseLeave={() => setShowControls(false)}>
-      <video ref={videoRef} poster={poster} className="w-full h-full" controls={showControls}>
-        <source src={videoSrc} type="video/mp4" />
-      </video>
-      <div className="absolute w-full top-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-        <h3 className="text-white font-semibold">{title}</h3>
-      </div>
+      className={`relative group ${aspectRatio ? "aspect-" + aspectRatio: "aspect-9/16"} cursor-pointer overflow-hidden rounded-lg bg-zinc-900 border border-white/5 hover:scale-105 transition-all duration-300`}>
+      <iframe
+        className="w-full h-full "
+        src={videoSrc}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen></iframe>
     </div>
+
   );
 }
 

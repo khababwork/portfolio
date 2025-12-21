@@ -46,20 +46,6 @@ const Contact = () => {
                 <span>Discord</span>
               </a>
               <a
-                href="https://x.com/249edit"
-                className="flex items-center gap-4 text-zinc-300 hover:text-white transition-colors"
-                target="_blank">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10">
-                  <FaTwitter size={18} />
-                </div>
-                <span>
-                  X{" "}
-                  <span className="text-stone-400 text-xs">
-                    (formerly twitter)
-                  </span>
-                </span>
-              </a>
-              <a
                 href="https://www.instagram.com/249edit"
                 className="flex items-center gap-4 text-zinc-300 hover:text-white transition-colors"
                 target="_blank">

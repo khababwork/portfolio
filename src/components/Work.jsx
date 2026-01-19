@@ -22,7 +22,8 @@ const Work = () => {
             <div className="h-1 w-full  bg-primary rounded-full"></div>
           </div>
           <div className="flex flex-wrap items-center justify-evenly w-full gap-6">
-            <PortfolioItem videoSrc="https://www.youtube.com/embed/CNOGNQDriYE?rel=0x" />
+            {/* تم استبدال الفيديو هنا */}
+            <PortfolioItem videoSrc="https://www.youtube.com/embed/RE_kaXmrBXU?rel=0x" />
             <PortfolioItem videoSrc="https://www.youtube.com/embed/L8EPqXjf7hM?rel=0x" />
             <PortfolioItem videoSrc="https://www.youtube.com/embed/nAYteMhFheI?rel=0x" />
           </div>

@@ -23,7 +23,7 @@ const Work = () => {
             <div className="h-1 w-full bg-primary rounded-full"></div>
           </div>
           <div className="flex flex-wrap items-center justify-evenly w-full gap-6">
-            <PortfolioItem videoSrc="https://youtube.com/shorts/YE3i_6IdBJA?rel=0x" />
+            <PortfolioItem videoSrc="https://www.youtube.com/embed/YE3i_6IdBJA?rel=0x" />
             <PortfolioItem videoSrc="https://www.youtube.com/embed/L8EPqXjf7hM?rel=0x" />
             <PortfolioItem videoSrc="https://www.youtube.com/embed/nAYteMhFheI?rel=0x" />
           </div>

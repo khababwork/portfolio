@@ -38,10 +38,9 @@ const Work = () => {
               <h2 className="text-3xl font-bold">Long-Form Videos</h2>
               <div className="h-1 w-full bg-primary rounded-full"></div>
             </div>
-            {/* تم تغيير الحاوية لتكون عمودية (flex-col) لتستوعب الفيديوهين */}
             <div className="flex flex-col gap-6 w-full">
               
-              {/* الفيديو الجديد */}
+              {/* الفيديو الجديد (Long Form) */}
               <div className="relative w-full aspect-video">
                 <iframe
                   src="https://www.youtube.com/embed/chjIRbrT3BI?rel=0"
@@ -53,7 +52,7 @@ const Work = () => {
                 ></iframe>
               </div>
 
-              {/* الفيديو القديم */}
+              {/* الفيديو القديم (Long Form) */}
               <div className="relative w-full aspect-video">
                 <iframe
                   src="https://www.youtube.com/embed/BFzmUGg9BnU?rel=0"
@@ -87,8 +86,29 @@ const Work = () => {
               </div>
             </div>
           </div>
-
         </div>
+
+        {/* Gaming Section - (تمت إضافته هنا) */}
+        <div className="mt-20">
+            <div className="mb-6 mx-auto sm:mx-0 w-fit">
+              <h2 className="text-3xl font-bold">Gaming Videos</h2>
+              <div className="h-1 w-full bg-primary rounded-full"></div>
+            </div>
+            {/* جعلت العرض نصف الشاشة تقريباً ليكون متناسقاً لأنه فيديو واحد، يمكنك جعله w-full إذا أردت */}
+            <div className="flex flex-col gap-6 w-full md:w-1/2 mx-auto sm:mx-0">
+              <div className="relative w-full aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/QcXNQF4Z6xo?rel=0"
+                  className="w-full h-full cursor-pointer overflow-hidden rounded-lg bg-zinc-900 border border-white/5 hover:scale-105 transition-all duration-300"
+                  allowFullScreen
+                  allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *;"
+                  referrerPolicy="strict-origin"
+                  title="Gaming Video"
+                ></iframe>
+              </div>
+            </div>
+        </div>
+
       </div>
     </section>
   );

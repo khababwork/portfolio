@@ -88,24 +88,35 @@ const Work = () => {
           </div>
         </div>
 
-        {/* Gaming Section - (تمت إضافته هنا) */}
+        {/* Gaming Section - (محدث) */}
         <div className="mt-20">
             <div className="mb-6 mx-auto sm:mx-0 w-fit">
               <h2 className="text-3xl font-bold">Gaming Videos</h2>
               <div className="h-1 w-full bg-primary rounded-full"></div>
             </div>
-            {/* جعلت العرض نصف الشاشة تقريباً ليكون متناسقاً لأنه فيديو واحد، يمكنك جعله w-full إذا أردت */}
-            <div className="flex flex-col gap-6 w-full md:w-1/2 mx-auto sm:mx-0">
-              <div className="relative w-full aspect-video">
-                <iframe
-                  src="https://www.youtube.com/embed/QcXNQF4Z6xo?rel=0"
-                  className="w-full h-full cursor-pointer overflow-hidden rounded-lg bg-zinc-900 border border-white/5 hover:scale-105 transition-all duration-300"
-                  allowFullScreen
-                  allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *;"
-                  referrerPolicy="strict-origin"
-                  title="Gaming Video"
-                ></iframe>
+            
+            {/* حاوية تجمع الفيديوهات (الطولي والعرضي) */}
+            <div className="flex flex-wrap items-start justify-center md:justify-start gap-8 w-full">
+              
+              {/* الفيديو العرضي (Long-Form Gaming) */}
+              <div className="w-full md:w-1/2">
+                <div className="relative w-full aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/QcXNQF4Z6xo?rel=0"
+                    className="w-full h-full cursor-pointer overflow-hidden rounded-lg bg-zinc-900 border border-white/5 hover:scale-105 transition-all duration-300"
+                    allowFullScreen
+                    allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *;"
+                    referrerPolicy="strict-origin"
+                    title="Gaming Video Long"
+                  ></iframe>
+                </div>
               </div>
+
+              {/* الفيديو الطولي (Short-Form Gaming) - الجديد */}
+              <div className="w-fit">
+                 <PortfolioItem videoSrc="https://www.youtube.com/embed/qFBaI3FwTJc?rel=0" />
+              </div>
+
             </div>
         </div>
 

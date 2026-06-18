@@ -1,62 +1,55 @@
-import SkillCard from "./utils/SkillCard"
+import SkillCard from "./utils/SkillCard";
 import { 
-  Film, 
-  Sparkles, 
+  Play, 
+  Scissors, 
+  Zap, 
   Layers, 
-  Volume2, 
-  MousePointerClick, 
-  Compass, 
+  Clock, 
+  TrendingUp, 
 } from 'lucide-react';
 
 const Skills = () => {
     const skills = [
-      { 
-        icon: Film, 
-        title: "Narrative Pacing", 
-        desc: "Structuring long-form documentaries with a flawless flow, seamless b-roll integration, and compelling storytelling." 
-      },
-      { 
-        icon: Sparkles, 
-        title: "Advanced Motion Design", 
-        desc: "Creating custom, dynamic motion graphics from scratch to elevate production value and explain complex ideas." 
-      },
-      { 
-        icon: MousePointerClick, 
-        title: "Retention Engineering", 
-        desc: "Designing high-engagement talking head videos optimized with smooth visual hooks and precise pacing to maintain attention." 
-      },
-      { 
-        icon: Volume2, 
-        title: "Cinematic Sound Design", 
-        desc: "Multi-layered audio mixing, sound effects (SFX) placement, and level matching to drive the emotional weight of the edit." 
-      },
-      { 
-        icon: Layers, 
-        title: "Asset Integration", 
-        desc: "Expertly preserving complex layers and visual structures between design environments and animation timelines." 
-      },
-      { 
-        icon: Compass, 
-        title: "Strategic Execution", 
-        desc: "Aligning editorial decisions with your brand identity and audience data, ensuring every project serves a clear purpose." 
-      },
+      { icon: Scissors, title: "Narrative Pacing", desc: "Structuring video layers with a flawless flow, seamless b-roll integration, and compelling storytelling." },
+      { icon: Zap, title: "Advanced Motion Design", desc: "Creating custom, dynamic motion graphics from scratch to elevate production value and explain complex ideas." },
+      { icon: Layers, title: "Retention Engineering", desc: "Designing high-engagement shorts optimized with smooth visual hooks and precise pacing to maintain attention." },
+      { icon: TrendingUp, title: "Cinematic Sound Design", desc: "Multi-layered audio mixing, sound effects (SFX) placement, and level matching to drive emotional weight." },
+      { icon: Clock, title: "Asset Integration", desc: "Expertly preserving complex layers and visual structures between design environments and animation timelines." },
+      { icon: Play, title: "Strategic Execution", desc: "Aligning editorial decisions with your brand identity and audience data, ensuring every project serves a purpose." },
     ];
   
     return (
-      <section id="skills" className="py-24 bg-zinc-900/50">
+      <section id="skills" className="py-28 bg-zinc-950 border-t border-white/[0.02]">
         <div className="container mx-auto px-6">
-          <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">Why Work With Me?</h2>
-            <p className="text-zinc-400">I bridge the gap between complex post-production workflows and powerful visual storytelling.</p>
+          
+          {/* Minimalist Centered Header */}
+          <div className="mx-auto max-w-2xl text-center mb-20">
+            <span className="text-xs font-bold tracking-[0.2em] text-zinc-500 uppercase">
+              Capabilities
+            </span>
+            <h2 className="text-3xl md:text-4xl font-light text-white mt-3 mb-4 tracking-tight">
+              Why Work <span className="font-semibold">With Me?</span>
+            </h2>
+            <div className="h-[1px] w-12 bg-white/20 mx-auto mb-4"></div>
+            <p className="text-zinc-400 text-sm font-light leading-relaxed">
+              I bridge the gap between complex post-production workflows and powerful visual storytelling.
+            </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {skills.map((skill, index) => (
-              <SkillCard key={index} {...skill} />
+              <div 
+                key={index} 
+                className="p-8 rounded-xl bg-zinc-900/20 border border-white/[0.03] hover:border-white/10 hover:bg-zinc-900/40 transition-all duration-300 group shadow-sm"
+              >
+                <SkillCard {...skill} />
+              </div>
             ))}
           </div>
         </div>
       </section>
     );
   };
+  
   export default Skills;

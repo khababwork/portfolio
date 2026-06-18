@@ -56,9 +56,11 @@ const Work = () => {
             <div className="h-1 w-full bg-primary rounded-full mt-2"></div>
           </div>
           
-          {/* Layout mixing 16:9 and 9:16 cleanly */}
-          <div className="flex flex-col lg:flex-row gap-8 items-start w-full">
-            <div className="flex flex-col gap-6 w-full lg:w-2/3">
+          {/* تحسين المحاذاة العمودية والمسافات */}
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center w-full">
+            
+            {/* العمود الأيسر: الفيديوهات العرضية */}
+            <div className="flex flex-col gap-8 w-full lg:w-2/3">
               <div className="relative w-full aspect-video">
                 <iframe
                   src="https://www.youtube.com/embed/e2lex2ymVWw?rel=0"
@@ -81,8 +83,11 @@ const Work = () => {
               </div>
             </div>
             
-            <div className="w-full lg:w-1/3 flex justify-center lg:justify-end">
-              <PortfolioItem videoSrc="https://www.youtube.com/embed/nQx1rrC1yMI?rel=0" />
+            {/* العمود الأيمن: الفيديو الطولي - تم تكبيره قليلاً وتوسيطه */}
+            <div className="w-full lg:w-1/3 flex justify-center items-center">
+              <div className="transform lg:scale-110 transition-transform duration-300">
+                <PortfolioItem videoSrc="https://www.youtube.com/embed/nQx1rrC1yMI?rel=0" />
+              </div>
             </div>
           </div>
         </div>
@@ -93,7 +98,8 @@ const Work = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-white tracking-wide">Talking Head Shorts</h2>
             <div className="h-1 w-full bg-primary rounded-full mt-2"></div>
           </div>
-          <div className="flex flex-wrap items-center justify-center md:justify-start gap-8 w-full">
+          {/* تم تغيير المحاذاة لتكون في المنتصف مع زيادة المسافة بين الفيديوهات */}
+          <div className="flex flex-wrap items-center justify-center gap-10 w-full">
             <PortfolioItem videoSrc="https://www.youtube.com/embed/YE3i_6IdBJA?rel=0" />
             <PortfolioItem videoSrc="https://www.youtube.com/embed/L8EPqXjf7hM?rel=0" />
           </div>

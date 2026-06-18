@@ -15,12 +15,12 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/[0.03] bg-zinc-950/70 backdrop-blur-md select-none">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo Section */}
-          <a href="#" className="text-xl font-light tracking-[0.15em] text-white uppercase">
-            249<span className="font-semibold text-zinc-400">EDIT</span>
+          {/* Your Original Logo Style Preserved */}
+          <a href="#" className="text-xl font-bold tracking-tight text-white">
+            249<span className="text-primary">EDIT</span>
           </a>
           
-          {/* Desktop Links */}
+          {/* Desktop Links with cleaner layout */}
           <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <a
@@ -33,7 +33,7 @@ const Navbar = () => {
             ))}
             <a
               href="#contact"
-              className="rounded-full border border-white/10 bg-white/5 px-6 py-2.5 text-xs font-semibold tracking-wider text-white uppercase transition-all duration-300 hover:bg-white hover:text-black hover:border-white"
+              className="rounded-full bg-white px-6 py-2.5 text-xs font-bold tracking-wider text-black uppercase transition-transform hover:scale-105 active:scale-95"
             >
               Let's Talk
             </a>

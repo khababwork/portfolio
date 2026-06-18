@@ -2,34 +2,43 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center pt-10 overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
+      className="relative flex min-h-screen items-center justify-center pt-20 overflow-hidden bg-zinc-950 select-none"
+    >
+      {/* Background soft glow decoration */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-zinc-800/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="container relative z-10 mx-auto px-6 text-center">
         <div className="animate-fade-in-up">
-          <span className="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#9B70FF] mb-6">
-            Available for Hire
+          {/* Refined Badge */}
+          <span className="inline-block rounded-full border border-white/5 bg-white/[0.02] px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-zinc-400 mb-8">
+            Available for Global Hire
           </span>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 text-balance">
-            Crafting Engaging <br />
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">
-              Video Content
+          
+          {/* Cinematic Title */}
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-light tracking-tight text-white mb-8 text-balance max-w-5xl mx-auto leading-[1.15]">
+            Crafting High-Retention <br />
+            <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-500">
+              Visual Narratives
             </span>
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-zinc-400 mb-10 text-balance">
-            I turn raw footage into clear, engaging stories designed to capture
-            and hold attention.
+          
+          {/* Elegant Subtitle */}
+          <p className="mx-auto max-w-xl text-sm md:text-base font-light text-zinc-400 mb-12 text-balance leading-relaxed">
+            Transforming raw concepts into premium post-production assets designed to capture, hold, and scale audience attention.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
             <a
               href="#work"
-              className="w-full sm:w-auto rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/40 hover:-translate-y-1 active:scale-97">
+              className="w-full sm:w-auto rounded-full bg-white px-8 py-4 text-xs font-bold uppercase tracking-widest text-black transition-all duration-300 hover:bg-zinc-200 hover:-translate-y-0.5 active:scale-95 shadow-lg"
+            >
               View Portfolio
             </a>
             <a
               href="#contact"
-              className="w-full sm:w-auto rounded-full border border-white/10 bg-white/5 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10 hover:-translate-y-1 duration-300 active:scale-97">
+              className="w-full sm:w-auto rounded-full border border-white/10 bg-white/[0.02] px-8 py-4 text-xs font-bold uppercase tracking-widest text-white transition-all duration-300 hover:bg-white/5 hover:border-white/20 hover:-translate-y-0.5 active:scale-95"
+            >
               Contact Me
             </a>
           </div>
